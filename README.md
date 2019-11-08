@@ -1,7 +1,7 @@
 ### graphql実装
 ![2019-02-17 10 45 19](https://user-images.githubusercontent.com/35171408/52907260-2bf34f00-32a1-11e9-8c20-3237ee7e0746.png)
 　
-Procedure  
+**Procedure**
 ```
 1, Put these 2 gems in Gemfile and bundle install
 gem 'graphql', '<= 1.7'
@@ -35,6 +35,7 @@ https://github.com/YukiTamura14/graphql_app/blob/5558a6af584179daa0cea034490abed
 ![2019-02-17 13 34 58](https://user-images.githubusercontent.com/35171408/52917423-a4ecb800-332e-11e9-9e78-dfb944438189.png)
 
 ### sendメソッドの危険性  
+### Danger of send method  
 外部から入力された値をObject#sendやpublic_sendメソッドにそのまま渡すのは避けた方がいい。  
 危険なコード例  
 ```
@@ -50,7 +51,6 @@ end
 参考URL：
 https://qiita.com/igrep/items/b2fed2d467f8a16f5eb0
 
-### Danger of send method
 It is better not to pass the value input from outside to Object#send or "public_send" method as it is.
 Here is a dangerous code example
 ```
